@@ -10,6 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo"></ImageView>
 
@@ -21,8 +22,8 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="5dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/tetelogo2"></ImageView>
 
 
@@ -32,11 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/input"
             android:hint="Nombre"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"></EditText>
@@ -47,11 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/input"
             android:hint="Usuario"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"></EditText>
@@ -62,11 +61,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/input"
             android:hint="Correo Electronico"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"></EditText>
@@ -77,27 +75,38 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/input"
             android:hint="Contraseña"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
-            android:textColorHint="#ccc"
-            android:password="true"></EditText>
+            android:password="true"
+            android:textColorHint="#ccc"></EditText>
 
 
         <Button
             android:id="@+id/btnRegistro2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="38dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="15dp"
             android:background="@drawable/btn_fondo_color"
             android:elevation="5dp"
             android:text="Regístrarse"
+            android:textColor="#278fec"
+            android:textSize="16sp"></Button>
+
+        <Button
+            android:id="@+id/btnSig2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/siguiente"
+            android:elevation="5dp"
             android:textColor="#278fec"
             android:textSize="16sp"></Button>
 

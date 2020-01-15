@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private EditText edtNombreR,edtUsuarioR,edtCorreoR,edtContraseñaR;
     private String nombre,usuario,correo,contraseña,newid;
-    Button btnRegR;
+    Button btnRegR, btnS2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,15 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validate();
+            }
+        });
+
+        btnS2 = (Button) findViewById(R.id.btnSig2);
+        btnS2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), Main3Activity.class);
+                startActivityForResult(intent, 0);
             }
         });
     }

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtNombre, edtPass;
     Button btnLogin, btnReg , btnMap;
 
-    Button btnSiguiente;
+    Button btnS1;
 
 
     @Override
@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnInicioSesion);
         btnReg = (Button) findViewById(R.id.btnRegistro);
         btnMap = (Button) findViewById(R.id.btnMap);
+
+        btnS1 = (Button) findViewById(R.id.btnSig1);
+        btnS1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), Main2Activity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
 
 
 
